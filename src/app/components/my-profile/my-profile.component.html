@@ -1,0 +1,78 @@
+<app-adminheader></app-adminheader>
+<!-- Start car breadcrumb row -->
+<div class="container-fluid cars_categery_row bt_bg bb_bg">
+  <div class="container">
+    <div class="row">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-12 pb_40">
+        <div class="my_profile_row">
+          <div class="my_profile_img">
+            <img src="assets/images/user-logo.png" />
+            <!-- <a routerLink="/#"><img class="img_edit" src="assets/images/icons/camera-1.png" /></a> -->
+            <h3>Hello, Username</h3>
+          </div>
+          <form class="pt_30">
+            <div class="col-md-6 offset-md-3 input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Enter Full name" aria-describedby="basic-addon1"
+                value="">
+            </div>
+            <div class="col-md-6 offset-md-3 input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"
+                    aria-hidden="true"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Enter Your Email" aria-describedby="basic-addon1"
+                value="">
+            </div>
+            <div class="col-md-6 offset-md-3 input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-mobile" aria-hidden="true" style="font-size: 24px;"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="9078564321" aria-describedby="basic-addon1" readonly>
+            </div>
+            <div class="col-md-6 offset-md-3 input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-mars-stroke"
+                    aria-hidden="true"></i></label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+              <div class="ml_15"></div>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
+                    aria-hidden="true"></i></span>
+              </div>
+              <input type="date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-md-6 offset-md-3 input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-globe" aria-hidden="true"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Nationality" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-md-6 offset-md-3  input-group mb-3 center_btn">
+              <button class="btn btn-bg" type="submit" (click)="cancel()">CANCEL</button>
+              <div class="ml_15"></div>
+              <button class="btn btn-clr" type="submit" (click)="save()">SAVE CHANGES</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
